@@ -1,0 +1,100 @@
+10-02 22:11:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "MAKER" not found; SQL statement:
+select this_.id as id5_0_, this_.version as version5_0_, this_.maker_code as maker3_5_0_, this_.maker_name as maker4_5_0_ from maker this_ [42102-164]
+10-02 22:16:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "REGISTRANTS" not found; SQL statement:
+alter table Registrants drop constraint FKE4F1F5084FEC5296 [42102-164]
+10-02 22:16:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "MODEL" not found; SQL statement:
+alter table model drop constraint FK633FB294F254C12 [42102-164]
+10-02 22:16:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "REGISTRATION" not found; SQL statement:
+alter table registration drop constraint FKAF83E8B9D115E716 [42102-164]
+10-02 22:16:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "VEHICLE" not found; SQL statement:
+alter table vehicle drop constraint FK14638F2C4F254C12 [42102-164]
+10-02 22:16:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "VEHICLE" not found; SQL statement:
+alter table vehicle drop constraint FK14638F2CAAB79723 [42102-164]
+10-02 22:16:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "VEHICLE" not found; SQL statement:
+alter table vehicle drop constraint FK14638F2C27CE25F2 [42102-164]
+10-02 22:16:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "VEHICLE_REGISTRANTS" not found; SQL statement:
+alter table vehicle_registrants drop constraint FK237ED895C979B90D [42102-164]
+10-02 22:16:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "VEHICLE_REGISTRANTS" not found; SQL statement:
+alter table vehicle_registrants drop constraint FK237ED8954E5EDB7E [42102-164]
+10-03 13:33:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+insert into maker values(0,MARUTI, MARUTI) [21002-164]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.command.dml.Insert.prepare(Insert.java:226)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1121)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:164)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:152)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1311)
+	at org.h2.server.web.WebApp.query(WebApp.java:1001)
+	at org.h2.server.web.WebApp.query(WebApp.java:977)
+	at org.h2.server.web.WebApp.process(WebApp.java:217)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:164)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:118)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:153)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:688)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.processFilterChain(UrlMappingsFilter.java:376)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:243)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.obtainContent(GrailsPageFilter.java:200)
+	at org.codehaus.groovy.grails.web.sitemesh.GrailsPageFilter.doFilter(GrailsPageFilter.java:151)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at org.grails.plugin.resource.DevModeSanityFilter.doFilter(DevModeSanityFilter.groovy:44)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:259)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1002)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:585)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+10-03 13:33:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO MAKER VALUES(HIBERATE_SEQUENCE.NEXTVAL,[*]0,MARUTI, MARUTI) "; expected "identifier"; SQL statement:
+insert into maker values(hiberate_sequence.nextval,0,MARUTI, MARUTI) [42001-164]
+10-03 13:34:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO MAKER VALUES(HIBERNATE_SEQUENCE.NEXTVAL,[*]0,MARUTI, MARUTI) "; expected "identifier"; SQL statement:
+insert into maker values(hibernate_sequence.nextval,0,MARUTI, MARUTI) [42001-164]
+10-03 13:34:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO MAKER VALUES(HIBERNATE_SEQUENCE.NEXTVAL,[*]0,'MARUTI', 'MARUTI') "; expected "identifier"; SQL statement:
+insert into maker values(hibernate_sequence.nextval,0,'MARUTI', 'MARUTI') [42001-164]

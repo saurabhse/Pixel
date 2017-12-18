@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="HelloWorld" basedir="." default="junit">
+<property name="lib.dir"     value="lib"/>
+<property name="src.dir"     value="src"/>
+<property name="report.dir"  value="./target/surefire-reports"/>
+<path id="classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+        <pathelement location="./bin"/>
+    </path>
+	<echo message="AAAAAAAAAAAAAAA--------------${mode}"/>
+<target name="junit" >
+		<mkdir dir="${report.dir}"/>
+        <junit printsummary="yes">
+            <classpath>
+                <path refid="classpath"/>
+                
+            </classpath>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="${report.dir}">
+                <fileset dir="${src.dir}" includes="**/Test*.java"/>
+            </batchtest>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${report.dir}">
+            <fileset dir="${report.dir}" includes="TEST-*.xml"/>
+            <report styledir="reportstyle" format="frames" todir="${report.dir}"/>
+        </junitreport>
+    </target>
+</project>    

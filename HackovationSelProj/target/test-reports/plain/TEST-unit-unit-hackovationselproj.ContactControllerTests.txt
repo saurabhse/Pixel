@@ -1,0 +1,103 @@
+Testsuite: hackovationselproj.ContactControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 2.72 sec
+------------- Standard Output ---------------
+--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+------------- ---------------- ---------------
+
+Testcase: testIndex took 1.507 sec
+Testcase: testList took 0.428 sec
+Testcase: testCreate took 0.139 sec
+Testcase: testSave took 0.175 sec
+	FAILED
+org.junit.ComparisonFailure: <a href='helo worl'>hhh</a> expected:<[h]> but was:<[k]>
+	at hackovationselproj.ContactControllerTests.testSave(ContactControllerTests.groovy:48)
+
+Testcase: testShow took 0.203 sec
+	FAILED
+Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+	at hackovationselproj.ContactControllerTests.testShow(ContactControllerTests.groovy:60)
+
+Testcase: testEdit took 0.08 sec
+	FAILED
+Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+	at hackovationselproj.ContactControllerTests.testEdit(ContactControllerTests.groovy:78)
+
+Testcase: testUpdate took 0.082 sec
+	FAILED
+Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+	at hackovationselproj.ContactControllerTests.testUpdate(ContactControllerTests.groovy:98)
+
+Testcase: testDelete took 0.064 sec
+	FAILED
+Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+	at hackovationselproj.ContactControllerTests.testDelete(ContactControllerTests.groovy:142)
+

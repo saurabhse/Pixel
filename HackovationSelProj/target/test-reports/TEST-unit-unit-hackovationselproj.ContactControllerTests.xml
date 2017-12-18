@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="dlusseth957050" name="hackovationselproj.ContactControllerTests" tests="8" time="2.72" timestamp="2015-09-21T08:28:29">
+  <properties />
+  <testcase classname="hackovationselproj.ContactControllerTests" name="testIndex" time="1.507" />
+  <testcase classname="hackovationselproj.ContactControllerTests" name="testList" time="0.428" />
+  <testcase classname="hackovationselproj.ContactControllerTests" name="testCreate" time="0.139" />
+  <testcase classname="hackovationselproj.ContactControllerTests" name="testSave" time="0.176">
+    <failure message="org.junit.ComparisonFailure: &lt;a href=&apos;helo worl&apos;&gt;hhh&lt;/a&gt; expected:&lt;[h]&gt; but was:&lt;[k]&gt;" type="junit.framework.AssertionFailedError">	at hackovationselproj.ContactControllerTests.testSave(ContactControllerTests.groovy:48)
+</failure>
+  </testcase>
+  <testcase classname="hackovationselproj.ContactControllerTests" name="testShow" time="0.203">
+    <failure message="Assertion failed: &#xa;&#xa;assert contact.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null ,null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+	at hackovationselproj.ContactControllerTests.testShow(ContactControllerTests.groovy:60)
+</failure>
+  </testcase>
+  <testcase classname="hackovationselproj.ContactControllerTests" name="testEdit" time="0.08">
+    <failure message="Assertion failed: &#xa;&#xa;assert contact.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null ,null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+	at hackovationselproj.ContactControllerTests.testEdit(ContactControllerTests.groovy:78)
+</failure>
+  </testcase>
+  <testcase classname="hackovationselproj.ContactControllerTests" name="testUpdate" time="0.082">
+    <failure message="Assertion failed: &#xa;&#xa;assert contact.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null ,null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+	at hackovationselproj.ContactControllerTests.testUpdate(ContactControllerTests.groovy:98)
+</failure>
+  </testcase>
+  <testcase classname="hackovationselproj.ContactControllerTests" name="testDelete" time="0.064">
+    <failure message="Assertion failed: &#xa;&#xa;assert contact.save() != null&#xa;       |       |      |&#xa;       |       null   false&#xa;       null ,null&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert contact.save() != null
+       |       |      |
+       |       null   false
+       null ,null
+
+	at hackovationselproj.ContactControllerTests.testDelete(ContactControllerTests.groovy:142)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-out>
+  <system-err><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-err>
+</testsuite>
