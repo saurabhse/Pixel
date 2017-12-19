@@ -6,7 +6,6 @@ Automation testing technique which combines Selenium and Image Processing Engine
 * Report Generation
 * Scrollbars handling
 * Visualization
-* Integration with Build Tools
 * Simple and Easy to Use
 
 ## Scope
@@ -33,5 +32,5 @@ Automation testing technique which combines Selenium and Image Processing Engine
 
 
 Collaborators :
-Amandeep Singh
+Amandeep Singh,
 Richa Arora
